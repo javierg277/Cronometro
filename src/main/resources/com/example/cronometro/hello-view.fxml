@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #182825;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cronometro.CronometroApp">
+    <children>
+        <Text fx:id="Tiempo" fill="#15b097" layoutX="160.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRONOMETRO" wrappingWidth="327.13671875">
+            <font>
+                <Font name="Bradley Hand ITC" size="43.0" />
+            </font>
+        </Text>
+        <Button fx:id="reiniciarBtn" layoutX="127.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#reiniciarCronometro" style="-fx-background-color: #15B097;" text="REINICIAR" textFill="WHITE">
+            <font>
+                <Font name="Bell MT" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="iniciarBtn" layoutX="274.0" layoutY="293.0" mnemonicParsing="false" onAction="#iniciarCronometro" onMouseClicked="#iniciarCronometro" style="-fx-background-color: #15B097;" text="INICIAR" textFill="WHITE">
+            <font>
+                <Font name="Bell MT" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="detenerBtn" layoutX="399.0" layoutY="293.0" mnemonicParsing="false" onAction="#detenerCronometro" onMouseClicked="#detenerCronometro" style="-fx-background-color: #15B097;" text="DETENER" textFill="WHITE">
+            <font>
+                <Font name="Bell MT" size="16.0" />
+            </font>
+        </Button>
+        <Label fx:id="tiempoLabel" layoutX="127.0" layoutY="103.0" prefHeight="141.0" prefWidth="370.0" text="00:00:00" textFill="#15b097">
+            <font>
+                <Font name="Bell MT" size="96.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
