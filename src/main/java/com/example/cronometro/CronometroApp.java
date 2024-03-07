@@ -56,14 +56,12 @@ public class CronometroApp extends Application {
     // Método para detener el cronómetro
     @FXML
     private void detenerCronometro() {
-        if(detenerBtn.getText().equals("REANUDAR")){
-            reanudarCronometro();
-        }
+
         if (timeline != null) {
             timeline.stop();
             iniciarBtn.setText("DETENIDO");
-            detenerBtn.setText("REANUDAR");
             iniciarBtn.setDisable(false);
+            iniciarBtn.setText("Reanudar");
             cronometroIniciado = false; // Restablecer la bandera para permitir iniciar el cronómetro nuevamente
         }
     }
